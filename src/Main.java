@@ -7,9 +7,8 @@ public class Main {
         int bonus; // бонус за каждые 100 рублей, при платеже более 1000
 
         if (payment >= 1000) {
-        bonus = payment / bonusCost;
-    }
-        else {
+            bonus = payment / bonusCost;
+        } else {
             bonus = 0;
         }
         int totalScoreCustomer = scoreCustomer + payment + bonus;
